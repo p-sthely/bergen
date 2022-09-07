@@ -1,0 +1,27 @@
+// load the bootstrap scss module (functions, variables, mixins, ...)
+@forward 'bootstrap';
+
+// load custom components scss parts
+@use 'navbar';
+@use 'first-card';
+
+// load custom fonts
+@font-face {
+    font-family: bodoni-book;
+    src: url(/assets/fonts/bodoni-book.otf);
+}
+@font-face {
+    font-family: proxima-thin;
+    src: url(/assets/fonts/proxima-thin.otf);
+}
+
+// Add additional custom code here
+h1, h2, h3, h4, h5, h6 {
+    font-family: bodoni-book;
+}
+
+@media (min-width: 768px) {
+    .w-50-md {
+        width: 50%;
+    }
+}

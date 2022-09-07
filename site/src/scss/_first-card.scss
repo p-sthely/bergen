@@ -1,0 +1,15 @@
+// use the bootstrap module
+@use 'bootstrap';
+
+.first-card {
+    border: 0 !important;
+    text-align: center;
+    .card-text {
+        @include bootstrap.font-size(1.08rem);
+    }
+    .card-title {
+        @include bootstrap.font-size(2.3rem);
+        @include bootstrap.margin-top(2rem);
+        line-height: 3.2rem;
+    }
+}
