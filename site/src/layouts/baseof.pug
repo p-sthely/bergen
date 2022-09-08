@@ -8,7 +8,7 @@ html(lang="en")
 		link(rel="stylesheet" href="/src/scss/main.scss")
 		script(type="module" src="/src/js/main.js")
 	body
-		include ../components/Navbar.pug
-		.container
-			block content
-
+		div.container-fluid.px-0.sticky-top
+			include ../components/Navbar.pug
+		block content
+		include ../components/Footer.pug

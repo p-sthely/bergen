@@ -7,25 +7,26 @@
 @use 'second-card';
 @use 'third-card';
 @use 'fourth-card';
+@use 'footer';
 
 // load custom fonts
 @font-face {
-    font-family: bodoni-book;
-    src: url(/assets/fonts/bodoni-book.otf);
+	font-family: bodoni-book;
+	src: url(/assets/fonts/bodoni-book.otf);
 }
+
 @font-face {
-    font-family: proxima-thin;
-    src: url(/assets/fonts/proxima-thin.otf);
+	font-family: proxima-thin;
+	src: url(/assets/fonts/proxima-thin.otf);
 }
 
 // add additional custom code here
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: bodoni-book;
-}
-
-@media (min-width: 768px) {
-    .w-50-md {
-        width: 50%;
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: bodoni-book;
 }

@@ -2,6 +2,6 @@
 @use 'bootstrap';
 
 .third-card {
-    // the custom mixin declared in _bootstrap.scss
-    @include bootstrap.card-with-image;
+	// the custom mixin declared in _bootstrap.scss
+	@include bootstrap.card-with-image;
 }

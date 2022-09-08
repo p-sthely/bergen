@@ -1,0 +1,14 @@
+.footer {
+	background-color: #f1f1ef;
+	a {
+		color: #000;
+	}
+
+	.list-group {
+		&-item {
+			border: 0;
+			padding-left: 0;
+			background: transparent;
+		}
+	}
+}
