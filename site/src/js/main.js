@@ -5,7 +5,7 @@
 // Import just what we need
 
 // If you're importing tooltips or popovers, be sure to include our Popper.js dependency
-// import "../../node_modules/popper.js/dist/popper.min.js";
+//import "../../node_modules/@popperjs/core/dist/umd/popper.min.js";
 
 //import "../../node_modules/bootstrap/js/dist/alert.js";
 //import "../../node_modules/bootstrap/js/dist/base-component.js";

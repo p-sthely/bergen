@@ -1,0 +1,7 @@
+// use the bootstrap module
+@use 'bootstrap';
+
+.fourth-card {
+    // the custom mixin declared in _bootstrap.scss
+    @include bootstrap.card-with-image;
+}
