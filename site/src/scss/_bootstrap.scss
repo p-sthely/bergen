@@ -55,19 +55,18 @@ $body-color: #000;
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
 // Add additional custom code here
-
 @mixin card-with-image {
 	border: 0 !important;
-
+	
 	.card-title {
 		@include font-size(1.9rem);
 		line-height: 3.2rem;
 	}
-
+	
 	.card-text {
 		@include font-size(1.08rem);
 	}
-
+	
 	.btn {
 		padding-left: 2.5rem;
 		padding-right: 2.5rem;

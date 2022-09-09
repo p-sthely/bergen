@@ -22,4 +22,3 @@ import "../../node_modules/bootstrap/js/dist/dropdown.js";
 //import "../../node_modules/bootstrap/js/dist/tooltip.js";
 
 console.log("Hello from '/src/js/main.js'!")
-

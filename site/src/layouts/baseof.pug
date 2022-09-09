@@ -1,14 +1,13 @@
 doctype html
-html(lang="en")
+html(lang="fr")
 	head
 		meta(charset="utf-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		block title
-			title "Bootstrap w/ Parcel"
+			title "Bergen"
 		link(rel="stylesheet" href="/src/scss/main.scss")
 		script(type="module" src="/src/js/main.js")
 	body
-		div.container-fluid.px-0.sticky-top
-			include ../components/Navbar.pug
+		include ../components/Navbar.pug
 		block content
 		include ../components/Footer.pug
