@@ -2,9 +2,6 @@
 @use 'bootstrap';
 
 .navbar {
-	position: sticky;
-	top: 0;
-	z-index: 1010;
 	--bs-bg-opacity: 1;
 	background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
 	
@@ -31,10 +28,15 @@
 		}
 		
 		.nav-link {
+      display: inline-block;
 			color: #000;
 			@include bootstrap.font-size(1.15rem);
 			
 			&.btn {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-top: 1.4rem;
+        padding-bottom: 1.4rem;
 				@include bootstrap.font-size(1rem);
 				font-weight: bold;
 				color: #fff;
@@ -42,20 +44,6 @@
 			
 			&.active {
 				text-decoration: underline;
-			}
-		}
-	}
-	
-	&-expand-lg {
-		.navbar-nav {
-			.nav-link {
-				&.btn {
-					margin-left: 1rem;
-					padding-left: 2.5rem;
-					padding-right: 2.5rem;
-					padding-top: 1.4rem;
-					padding-bottom: 1.4rem;
-				}
 			}
 		}
 	}
