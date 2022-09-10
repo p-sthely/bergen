@@ -7,10 +7,11 @@ html(lang="fr")
 			title "Bergen"
 		link(rel="stylesheet" href="/src/scss/main.scss")
 		script(type="module" src="/src/js/main.js")
-	body.container-fluid
-		.row.row-cols-1
-			.col.sticky-top
-				include ../components/Navbar.pug
-			block content
-			.col.px-0
-				include ../components/Footer.pug
+	body
+		.container-fluid
+			.row.row-cols-1
+				.col.sticky-top
+					include ../components/Navbar.pug
+				block content
+				.col.px-0
+					include ../components/Footer.pug

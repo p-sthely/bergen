@@ -1,24 +1,28 @@
 nav.navbar.navbar-expand-lg
 	.container-fluid.px-0
 		a.navbar-brand(href='/') Bergen
-		button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+		button.navbar-toggler(type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar")
 			span.navbar-toggler-icon
-		#navbarSupportedContent.collapse.navbar-collapse.flex-grow-0
-			ul.navbar-nav.me-auto
-				li.nav-item
-					a.nav-link.active(aria-current="page" href="#") Mon travail
-				li.nav-item
-					a.nav-link(href="#") À propos
-				li.nav-item
-					a.nav-link(href="#") Nos services
-				li.nav-item.dropdown
-					a.nav-link.dropdown-toggle(href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false") Projets
-					ul.dropdown-menu
-						li
-							a.dropdown-item(href="#") Design résidentiel
-						li
-							a.dropdown-item(href="#") Design commercial
-						li
-							a.dropdown-item(href="#") Design expérimental
-				li.nav-item
-					a.nav-link.btn.bg-black(href="/src/pages/contact.pug" role="button") Nous contacter
+		#offcanvasNavbar.offcanvas.offcanvas-end.flex-grow-0(tabindex="-1" aria-labelledby="offcanvasNavbarLabel")
+			.offcanvas-header
+				h5#offcanvasNavbarLabel.offcanvas-title Bergen
+				button.btn-close(type="button" data-bs-dismiss="offcanvas" aria-label="Close")
+			.offcanvas-body
+				ul.navbar-nav.me-auto
+					li.nav-item
+						a.nav-link.active(aria-current="page" href="#") Mon travail
+					li.nav-item
+						a.nav-link(href="#") À propos
+					li.nav-item
+						a.nav-link(href="#") Nos services
+					li.nav-item.dropdown
+						a.nav-link.dropdown-toggle(href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false") Projets
+						ul.dropdown-menu
+							li
+								a.dropdown-item(href="#") Design résidentiel
+							li
+								a.dropdown-item(href="#") Design commercial
+							li
+								a.dropdown-item(href="#") Design expérimental
+					li.nav-item
+						a.nav-link.btn.bg-black(href="/src/pages/contact.pug" role="button") Nous contacter
