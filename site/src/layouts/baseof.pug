@@ -8,10 +8,9 @@ html(lang="fr")
 		link(rel="stylesheet" href="/src/scss/main.scss")
 		script(type="module" src="/src/js/main.js")
 	body
-		.container-fluid
-			.row.row-cols-1
+		.container-fluid.px-md-4.px-xl-5
+			.row.row-cols-1.gy-5.gy-md-6.gy-lg-7
 				.col.sticky-top
 					include ../components/Navbar.pug
 				block content
-				.col.px-0
-					include ../components/Footer.pug
+		include ../components/Footer.pug
