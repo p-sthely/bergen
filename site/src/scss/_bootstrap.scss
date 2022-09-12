@@ -90,6 +90,11 @@ h6 {
 
 @mixin card-with-image {
 	border: 0 !important;
+
+	.card-img-top {
+		height: 100vh;
+		object-fit: cover;
+	}
 	
 	.card-title {
 		@include font-size(1.9rem);
