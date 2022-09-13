@@ -32,18 +32,62 @@
 			color: #000;
 			@include bootstrap.font-size(1.15rem);
 			
-			&.btn {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-        padding-top: 1.4rem;
-        padding-bottom: 1.4rem;
-				@include bootstrap.font-size(1rem);
-				font-weight: bold;
-				color: #fff;
-			}
-			
 			&.active {
 				text-decoration: underline;
+			}
+		}
+	}
+
+	.offcanvas {
+		width: 100vw;
+		flex-direction: row;
+
+		.offcanvas-body {
+			.actions {
+				.btn {
+					padding-left: 2.5rem;
+					padding-right: 2.5rem;
+					padding-top: 1.4rem;
+					padding-bottom: 1.4rem;
+					@include bootstrap.font-size(1rem);
+					font-weight: bold;
+					color: #fff;
+				}
+			}
+		}
+
+		&-title {
+			@include bootstrap.font-size(1.8rem);
+		}
+
+		&.showing,
+		&.show {
+			flex-direction: column;
+
+			.offcanvas-body {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+
+				.navbar-nav {
+					justify-content: center;
+					align-items: center;
+					flex-grow: 0;
+
+					.nav-item {
+						text-align: center;
+	
+						.nav-link,
+						.dropdown-item {
+							text-align: center;
+							@include bootstrap.font-size(4rem);
+						}
+					}
+				}
+
+				.actions {
+					text-align: center;
+				}
 			}
 		}
 	}
